@@ -7,6 +7,7 @@ import {
   TerminalSquare, Blocks, Zap, Heart, Disc3, Radio, AudioWaveform, CheckCircle2
 } from 'lucide-react';
 import { FaGithub, FaBitcoin } from 'react-icons/fa';
+import { Analytics } from '@vercel/analytics/react';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50, rotateX: 15, scale: 0.95 },
@@ -508,6 +509,7 @@ export default function App() {
         <SupportSection />
       </main>
       <Footer />
+      <Analytics />
     </div>
   );
 }
