@@ -218,7 +218,7 @@ const Hero = ({ onDownloadClick }) => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent1/30 bg-accent1/10 text-accent2 text-sm font-medium mb-8"
         >
-          <Zap className="w-4 h-4" /> v1.5.1 is out now
+          <Zap className="w-4 h-4" /> v1.6.0 is out now
         </motion.div>
         
         <motion.h1 
