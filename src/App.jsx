@@ -306,7 +306,7 @@ export default function App() {
               <Music className="size-4.5 stroke-[2.5]" />
             </div>
             <span className="font-display text-lg font-bold tracking-tight">
-              Beats<span className="text-brand-accent">Music</span>
+              Beats <span className="text-brand-accent">Music</span>
             </span>
           </a>
 
@@ -400,7 +400,7 @@ export default function App() {
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-border">
                 <span className="font-display text-lg font-bold tracking-tight">
-                  Beats<span className="text-brand-accent">Music</span>
+                  Beats <span className="text-brand-accent">Music</span>
                 </span>
                 <button
                   type="button"
@@ -1326,17 +1326,28 @@ export default function App() {
                   </p>
                   <h3 className="mt-3 text-lg font-semibold tracking-[-0.01em]">Never miss a release</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    Watch the Beats repository on GitHub to receive instant notifications whenever a new build or patch drops.
+                    Join our Telegram channel or watch the Beats repository on GitHub to receive instant notifications whenever a new build or patch drops.
                   </p>
-                  <a
-                    href={GITHUB_REPO_URL + '/releases'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline btn-md mt-5"
-                  >
-                    <FaGithub className="size-4" />
-                    All releases on GitHub
-                  </a>
+                  <div className="mt-5 flex flex-wrap items-center gap-2.5">
+                    <a
+                      href="https://t.me/beats_music_player"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-md"
+                    >
+                      <FaTelegramPlane className="size-4 text-brand-accent" />
+                      Telegram Channel
+                    </a>
+                    <a
+                      href={GITHUB_REPO_URL + '/releases'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-md"
+                    >
+                      <FaGithub className="size-4" />
+                      Releases on GitHub
+                    </a>
+                  </div>
                 </div>
 
                 <div className="border-t border-foreground/25 pt-5">
@@ -1345,16 +1356,27 @@ export default function App() {
                   </p>
                   <h3 className="mt-3 text-lg font-semibold tracking-[-0.01em]">Shape the roadmap</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    Feature suggestions, UI feedback, and plugin proposals all happen on GitHub Discussions.
+                    Feature suggestions, UI feedback, and plugin proposals happen in our Telegram discussion group and on GitHub Discussions.
                   </p>
-                  <a
-                    href={GITHUB_REPO_URL + '/discussions'}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-outline btn-md mt-5"
-                  >
-                    Join the discussions
-                  </a>
+                  <div className="mt-5 flex flex-wrap items-center gap-2.5">
+                    <a
+                      href="https://t.me/beats_music_chat"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-md"
+                    >
+                      <FaTelegramPlane className="size-4 text-brand-accent" />
+                      Discussion Group
+                    </a>
+                    <a
+                      href={GITHUB_REPO_URL + '/discussions'}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-outline btn-md"
+                    >
+                      GitHub Discussions
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -1662,7 +1684,7 @@ export default function App() {
                   <Music className="size-4 stroke-[2.5]" />
                 </div>
                 <span className="font-display text-lg font-bold tracking-tight">
-                  Beats<span className="text-brand-accent">Music</span>
+                  Beats <span className="text-brand-accent">Music</span>
                 </span>
               </a>
 
@@ -1681,6 +1703,7 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Developer on X"
+                  title="Developer on X"
                   className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
                   <span className="font-bold text-xs">𝕏</span>
@@ -1690,15 +1713,17 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
+                  title="LinkedIn"
                   className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
                   <ExternalLink className="size-4" />
                 </a>
                 <a
-                  href="https://t.me/artwebtech"
+                  href="https://t.me/beats_music_player"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Telegram"
+                  aria-label="Telegram Channel"
+                  title="Telegram Channel"
                   className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
                   <FaTelegramPlane className="size-4" />
@@ -1708,6 +1733,7 @@ export default function App() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub"
+                  title="GitHub"
                   className="flex size-9 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
                 >
                   <FaGithub className="size-4" />
@@ -1743,8 +1769,9 @@ export default function App() {
               <h3 className="font-display text-sm font-semibold">Community</h3>
               <ul className="mt-4 space-y-2.5">
                 <li><a href="#contribute" className="text-sm text-muted-foreground transition-colors hover:text-brand-accent">Donate &amp; Support</a></li>
-                <li><a href={GITHUB_REPO_URL + '/discussions'} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-brand-accent">Discussions</a></li>
-                <li><a href="https://t.me/artwebtech" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-brand-accent">Telegram Channel</a></li>
+                <li><a href={GITHUB_REPO_URL + '/discussions'} target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-brand-accent">GitHub Discussions</a></li>
+                <li><a href="https://t.me/beats_music_player" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-brand-accent">Telegram Channel</a></li>
+                <li><a href="https://t.me/beats_music_chat" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground transition-colors hover:text-brand-accent">Telegram Discussion Group</a></li>
                 <li><a href="mailto:aadithcv@protonmail.com" className="text-sm text-muted-foreground transition-colors hover:text-brand-accent">Email the developer</a></li>
               </ul>
             </nav>
