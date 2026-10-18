@@ -608,6 +608,26 @@ export default function App() {
             </div>
             <SocialCards cards={BEATS_APP_CARDS} />
           </div>
+
+          {/* Desktop Product Showcase Frame */}
+          <div className="relative mx-auto mt-16 sm:mt-20 w-full max-w-6xl px-4 sm:px-6">
+            <figure>
+              <div className="rounded-2xl border border-border bg-card p-2 sm:p-3 shadow-xl">
+                <img
+                  src="/screenshots/hero_banner.jpg"
+                  alt="Full view of Beats Music Player desktop interface"
+                  width="2300"
+                  height="1000"
+                  fetchPriority="high"
+                  decoding="async"
+                  className="h-auto w-full rounded-xl border border-border/60 object-cover"
+                />
+              </div>
+              <figcaption className="mt-3.5 text-center text-xs text-muted-foreground/80">
+                The modern Beats desktop interface — featuring Jump back in, charts, and instant search.
+              </figcaption>
+            </figure>
+          </div>
         </section>
 
         {/* --- Capabilities Marquee --- */}
