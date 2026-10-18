@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://beatsmusic.app/</loc>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://beatsmusic.app/screenshots/hero_banner.jpg</image:loc>
+      <image:title>Beats Music Player — Modern Audio Interface</image:title>
+      <image:caption>Beats Music Player interface showing desktop player, library, and synced karaoke lyrics</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://beatsmusic.app/screenshots/playerview.jpg</image:loc>
+      <image:title>Beats Music Player View &amp; 10-Band EQ</image:title>
+      <image:caption>Beats player view with album artwork, audio equalizer and playback controls</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://beatsmusic.app/screenshots/lyricsview.jpg</image:loc>
+      <image:title>Beats Full-Screen Time-Synced Karaoke Lyrics</image:title>
+      <image:caption>Beats full-screen time-synced karaoke lyrics view</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://beatsmusic.app/screenshots/playlistview.jpg</image:loc>
+      <image:title>Beats Offline Library &amp; Playlist Manager</image:title>
+      <image:caption>Beats playlist and offline library management</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://beatsmusic.app/screenshots/artistview.jpg</image:loc>
+      <image:title>Beats Artist Discovery &amp; Discography</image:title>
+      <image:caption>Beats artist discovery and discography view</image:caption>
+    </image:image>
+  </url>
+</urlset>

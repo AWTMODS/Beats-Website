@@ -15,12 +15,168 @@
         }
       })();
     </script>
-    <meta name="theme-color" content="#09090b" />
-    <title>Beats — Free, ad-free music player for Android, Windows &amp; Linux</title>
-    <meta name="description" content="Beats is a free, open-source, plugin-based music player built with Flutter & Rust. Your downloaded songs play fully offline — community plugins bring streaming, charts, search and recommendations into one queue. No ads. No tracking." />
+    <meta name="theme-color" content="#09090b" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Beats Music — Free, Open Source &amp; Ad-Free Music Player for Android, Windows &amp; Linux</title>
+    <meta name="title" content="Beats Music — Free, Open Source &amp; Ad-Free Music Player for Android, Windows &amp; Linux" />
+    <meta name="description" content="Beats Music is a free, open-source audio player for Android, Windows, and Linux built with Flutter &amp; Rust. Offline FLAC/MP3 playback, synchronized lyrics, 10-band equalizer, and sandboxed WebAssembly plugins. 100% ad-free with zero tracking." />
+    <meta name="keywords" content="Beats Music, Beats Music Player, open source music player, ad-free music player, flutter music player, rust audio engine, offline audio player, synced lyrics player, karaoke lyrics, flac player, bex plugins, android music app, windows audio player, linux music player, free music streaming, AWTMODS" />
+    <meta name="author" content="Aadith C V (AWTMODS)" />
+    <meta name="publisher" content="AWTMODS" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://beatsmusic.app/" />
+
+    <!-- Open Graph / Facebook / Discord / Telegram / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Beats Music" />
+    <meta property="og:url" content="https://beatsmusic.app/" />
+    <meta property="og:title" content="Beats Music — Free, Open Source &amp; Ad-Free Music Player" />
+    <meta property="og:description" content="High-fidelity audio playback, synchronized karaoke lyrics, offline library management, and sandboxed community streaming plugins. Free, open source, and zero tracking." />
+    <meta property="og:image" content="/screenshots/hero_banner.jpg" />
+    <meta property="og:image:secure_url" content="/screenshots/hero_banner.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:alt" content="Beats Music Player — Modern desktop and mobile audio interface showcase" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aadith.cv" />
+    <meta name="twitter:creator" content="@aadith.cv" />
+    <meta name="twitter:title" content="Beats Music — Free, Open Source &amp; Ad-Free Music Player" />
+    <meta name="twitter:description" content="High-fidelity audio playback, synchronized karaoke lyrics, offline library management, and sandboxed community streaming plugins. Free, open source, and zero tracking." />
+    <meta name="twitter:image" content="/screenshots/hero_banner.jpg" />
+    <meta name="twitter:image:alt" content="Beats Music Player — Modern desktop and mobile audio interface showcase" />
+
+    <!-- Mobile App & PWA Capabilities -->
+    <meta name="application-name" content="Beats Music" />
+    <meta name="apple-mobile-web-app-title" content="Beats Music" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Performance & Preconnect Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data (JSON-LD) for Search Engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://beatsmusic.app/#website",
+            "url": "https://beatsmusic.app/",
+            "name": "Beats Music",
+            "description": "Free, open-source, ad-free music player for Android, Windows, and Linux.",
+            "publisher": {
+              "@id": "https://beatsmusic.app/#organization"
+            },
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://beatsmusic.app/#organization",
+            "name": "AWTMODS",
+            "url": "https://github.com/AWTMODS",
+            "logo": "https://beatsmusic.app/favicon.svg",
+            "sameAs": [
+              "https://github.com/AWTMODS",
+              "https://github.com/AWTMODS/Beats-Music",
+              "https://t.me/beats_music_player",
+              "https://t.me/beats_music_chat",
+              "https://x.com/aadith.cv/"
+            ]
+          },
+          {
+            "@type": "SoftwareApplication",
+            "@id": "https://beatsmusic.app/#software",
+            "name": "Beats Music",
+            "alternateName": ["Beats", "Beats Music Player"],
+            "applicationCategory": "MultimediaApplication",
+            "applicationSubCategory": "Music & Audio Player",
+            "operatingSystem": "Android, Windows, Linux",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+            "license": "https://opensource.org/licenses/MIT",
+            "description": "Beats Music is a free, open-source, plugin-based audio player built with Flutter & Rust. Features offline FLAC/MP3 playback, synchronized karaoke lyrics, 10-band equalizer, and sandboxed WebAssembly plugins.",
+            "softwareVersion": "1.6.0",
+            "downloadUrl": "https://github.com/AWTMODS/Beats-Music/releases",
+            "featureList": [
+              "100% Free & Open Source under MIT License",
+              "No advertisements, no subscriptions, zero tracking",
+              "Fully offline high-resolution audio (FLAC, MP3, WAV, AAC)",
+              "Synchronized time-aligned karaoke lyrics",
+              "Sandboxed WebAssembly (.bex) plugin ecosystem",
+              "10-band graphic audio equalizer with presets",
+              "Native builds for Android, Windows, and Linux"
+            ],
+            "screenshot": [
+              "https://beatsmusic.app/screenshots/hero_banner.jpg",
+              "https://beatsmusic.app/screenshots/playerview.jpg",
+              "https://beatsmusic.app/screenshots/lyricsview.jpg",
+              "https://beatsmusic.app/screenshots/playlistview.jpg",
+              "https://beatsmusic.app/screenshots/artistview.jpg"
+            ],
+            "author": {
+              "@type": "Person",
+              "name": "Aadith C V",
+              "url": "https://github.com/AWTMODS"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://beatsmusic.app/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is Beats really free? What's the catch?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "There is no catch. Beats is open-source under the permissive MIT license. There are no ads, no paywalled features, no account mandates, and zero tracking. You can inspect all source code, verify builds, or fork it anytime."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Which platforms and operating systems are supported?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Beats runs natively on Android, Windows, and Linux. Built with Flutter and a native Rust core, it brings platform-native media controls, system notification media widgets, and global hotkeys to each OS."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does offline playback and plugin streaming work?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Beats natively plays local FLAC, MP3, WAV, and AAC files completely offline. For online music, it connects to sandboxed .bex plugins running within a memory-safe WebAssembly runtime. Plugins provide chart feeds, stream resolvers, and lyrics engines without compromising app stability."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I export my playlists and library?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely. Beats gives you complete ownership over your data. You can export your full playlist library as standard JSON or M3U files, compatible with virtually any other music player."
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="bg-background font-sans text-foreground antialiased selection:bg-brand-accent/20 selection:text-foreground">
     <div id="root"></div>

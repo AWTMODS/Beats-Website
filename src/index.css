@@ -85,6 +85,15 @@
   .btn-icon {
     @apply size-9 p-0 rounded-full shrink-0 flex items-center justify-center;
   }
+
+  /* Fan Carousel layout & card sizing */
+  .fan-layout {
+    @apply relative flex items-center justify-center w-full max-w-[80rem] h-[22rem] sm:h-[26rem] md:h-[28rem] lg:h-[34rem] xl:h-[38rem];
+  }
+
+  .fan-card {
+    @apply absolute w-[11rem] h-[19rem] sm:w-[13.5rem] sm:h-[23rem] md:w-[15rem] md:h-[25.5rem] lg:w-[17.5rem] lg:h-[30rem] xl:w-[19rem] xl:h-[33rem] rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden border border-black/10 dark:border-white/10 bg-neutral-900 select-none will-change-transform cursor-pointer;
+  }
 }
 
 /* Gradient mask for Marquee */

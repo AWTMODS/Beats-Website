@@ -1,0 +1,17 @@
+{
+  "name": "Beats Music Player",
+  "short_name": "Beats Music",
+  "description": "Free, open-source, plugin-based audio player built with Flutter & Rust for Android, Windows, and Linux.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

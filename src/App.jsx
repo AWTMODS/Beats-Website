@@ -8,6 +8,8 @@ import {
 } from 'lucide-react';
 import { FaGithub, FaAndroid, FaWindows, FaLinux, FaPaypal, FaBitcoin, FaTelegramPlane } from 'react-icons/fa';
 import { Analytics } from '@vercel/analytics/react';
+import SocialCards from '@/components/ui/card-fan-carousel';
+import { BEATS_APP_CARDS } from '@/components/ui/demo';
 
 const REPO_OWNER = 'AWTMODS';
 const REPO_NAME = 'Beats-Music';
@@ -471,6 +473,7 @@ export default function App() {
 
             {/* Headline */}
             <h1 className="mt-6 text-balance text-[2.75rem] font-semibold leading-[1.02] tracking-[-0.035em] sm:text-6xl lg:text-[4.6rem]">
+              <span className="sr-only">Beats Music Player — </span>
               Every song you love,
               <br />
               <span className="text-brand-accent">in pure clarity.</span>
@@ -592,6 +595,20 @@ export default function App() {
 
           </div>
 
+          {/* Card Fan Carousel - Mobile App Screens */}
+          <div className="relative mx-auto mt-16 sm:mt-20 w-full max-w-7xl px-4 sm:px-6">
+            <div className="text-center mb-6 sm:mb-8">
+              <p className="kicker">Mobile Experience</p>
+              <h2 className="mt-2 text-2xl font-semibold tracking-tight sm:text-3xl text-balance">
+                Fluid, modern, and crafted for Android
+              </h2>
+              <p className="mx-auto mt-2 max-w-md text-sm text-muted-foreground">
+                Hover, drag, and browse through the native mobile interface screens.
+              </p>
+            </div>
+            <SocialCards cards={BEATS_APP_CARDS} />
+          </div>
+
           {/* Product Showcase Frame (Hero Screenshot) */}
           <div className="relative mx-auto mt-16 w-full max-w-6xl px-4 sm:px-6">
             <figure>
@@ -601,6 +618,8 @@ export default function App() {
                   alt="Full view of Beats Music Player interface — player, library and synchronized karaoke lyrics"
                   width="2300"
                   height="1000"
+                  fetchPriority="high"
+                  decoding="async"
                   className="h-auto w-full rounded-xl border border-border/60 object-cover"
                 />
               </div>
@@ -886,7 +905,7 @@ export default function App() {
                   <span aria-hidden="true" className="h-px w-5 bg-brand-accent/60" />
                   Rust &amp; WebAssembly Core
                 </p>
-                <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
+                <h2 id="plugins-heading" className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
                   One player. <span className="text-brand-accent">Every source.</span>
                 </h2>
 
@@ -993,7 +1012,7 @@ export default function App() {
                 <span aria-hidden="true" className="h-px w-5 bg-brand-accent/60" />
                 Screenshots
               </p>
-              <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
+              <h2 id="showcase-heading" className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
                 Take a look <span className="text-brand-accent">inside.</span>
               </h2>
             </div>
@@ -1008,6 +1027,7 @@ export default function App() {
                   width="1770"
                   height="960"
                   loading="lazy"
+                  decoding="async"
                   className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
                 />
                 <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
@@ -1023,6 +1043,7 @@ export default function App() {
                   width="1770"
                   height="960"
                   loading="lazy"
+                  decoding="async"
                   className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
                 />
                 <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
@@ -1038,6 +1059,7 @@ export default function App() {
                   width="1770"
                   height="960"
                   loading="lazy"
+                  decoding="async"
                   className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
                 />
                 <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
@@ -1053,6 +1075,7 @@ export default function App() {
                   width="1770"
                   height="960"
                   loading="lazy"
+                  decoding="async"
                   className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
                 />
                 <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
@@ -1073,7 +1096,7 @@ export default function App() {
                 <span aria-hidden="true" className="h-px w-5 bg-brand-accent/60" />
                 Download
               </p>
-              <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
+              <h2 id="download-heading" className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
                 Free. Always. <span className="text-brand-accent">No strings attached.</span>
               </h2>
             </div>
@@ -1265,7 +1288,7 @@ export default function App() {
                 <span aria-hidden="true" className="h-px w-5 bg-brand-accent/60" />
                 What's new
               </p>
-              <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
+              <h2 id="updates-heading" className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
                 Always <span className="text-brand-accent">shipping.</span>
               </h2>
             </div>
@@ -1392,7 +1415,7 @@ export default function App() {
                 <span aria-hidden="true" className="h-px w-5 bg-brand-accent/60" />
                 Open source &amp; Support
               </p>
-              <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
+              <h2 id="contribute-heading" className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
                 Built in the <span className="text-brand-accent">open.</span>
               </h2>
             </div>
@@ -1598,7 +1621,7 @@ export default function App() {
                 FAQ
                 <span aria-hidden="true" className="h-px w-5 bg-brand-accent/60" />
               </p>
-              <h2 className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
+              <h2 id="faq-heading" className="text-balance text-3xl font-semibold tracking-[-0.03em] sm:text-4xl lg:text-[2.9rem] lg:leading-[1.08]">
                 Questions, <span className="text-brand-accent">answered.</span>
               </h2>
             </div>
