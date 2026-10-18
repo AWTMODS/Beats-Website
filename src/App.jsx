@@ -1017,9 +1017,25 @@ export default function App() {
               </h2>
             </div>
 
-            <div className="grid gap-4 sm:gap-5 md:grid-cols-2">
+            <div className="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-3">
               
-              {/* Screenshot 1: Player View */}
+              {/* Screenshot 1: Home View */}
+              <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
+                <img
+                  src="/screenshots/hero_banner.jpg"
+                  alt="Beats home screen with jump back in and charts"
+                  width="1770"
+                  height="960"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
+                />
+                <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
+                  Home &amp; Trending Charts
+                </figcaption>
+              </figure>
+
+              {/* Screenshot 2: Player View */}
               <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
                 <img
                   src="/screenshots/playerview.jpg"
@@ -1031,11 +1047,11 @@ export default function App() {
                   className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
                 />
                 <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
-                  Player view &amp; 10-band EQ
+                  Player View &amp; Queue
                 </figcaption>
               </figure>
 
-              {/* Screenshot 2: Karaoke Lyrics */}
+              {/* Screenshot 3: Karaoke Lyrics */}
               <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
                 <img
                   src="/screenshots/lyricsview.jpg"
@@ -1047,15 +1063,15 @@ export default function App() {
                   className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
                 />
                 <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
-                  Karaoke synced lyrics
+                  Karaoke Synced Lyrics
                 </figcaption>
               </figure>
 
-              {/* Screenshot 3: Playlists */}
+              {/* Screenshot 4: Search & Discovery */}
               <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
                 <img
                   src="/screenshots/playlistview.jpg"
-                  alt="Beats playlist and offline library management"
+                  alt="Beats instant search and filters"
                   width="1770"
                   height="960"
                   loading="lazy"
@@ -1063,11 +1079,27 @@ export default function App() {
                   className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
                 />
                 <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
-                  Library &amp; Playlists
+                  Instant Search &amp; Filters
                 </figcaption>
               </figure>
 
-              {/* Screenshot 4: Artist View */}
+              {/* Screenshot 5: Library & Playlists */}
+              <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
+                <img
+                  src="/screenshots/libraryview.jpg"
+                  alt="Beats offline library, downloaded songs and shared playlists"
+                  width="1770"
+                  height="960"
+                  loading="lazy"
+                  decoding="async"
+                  className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
+                />
+                <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
+                  Library &amp; Offline Downloads
+                </figcaption>
+              </figure>
+
+              {/* Screenshot 6: Artist View */}
               <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
                 <img
                   src="/screenshots/artistview.jpg"

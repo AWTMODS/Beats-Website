@@ -27,6 +27,11 @@
       <image:caption>Beats playlist and offline library management</image:caption>
     </image:image>
     <image:image>
+      <image:loc>https://beatsmusic.app/screenshots/libraryview.jpg</image:loc>
+      <image:title>Beats Offline Library &amp; Download Manager</image:title>
+      <image:caption>Beats offline library, downloaded songs and shared playlists</image:caption>
+    </image:image>
+    <image:image>
       <image:loc>https://beatsmusic.app/screenshots/artistview.jpg</image:loc>
       <image:title>Beats Artist Discovery &amp; Discography</image:title>
       <image:caption>Beats artist discovery and discography view</image:caption>
