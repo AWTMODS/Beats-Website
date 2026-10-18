@@ -1051,23 +1051,7 @@ export default function App() {
                 </figcaption>
               </figure>
 
-              {/* Screenshot 3: Karaoke Lyrics */}
-              <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
-                <img
-                  src="/screenshots/lyricsview.jpg"
-                  alt="Beats full-screen time-synced karaoke lyrics view"
-                  width="1770"
-                  height="960"
-                  loading="lazy"
-                  decoding="async"
-                  className="h-auto w-full transition-transform duration-700 group-hover:scale-[1.02] object-cover"
-                />
-                <figcaption className="absolute bottom-3 left-3 rounded-full border border-border/60 bg-background/90 px-3.5 py-1.5 text-xs font-medium text-foreground shadow-sm backdrop-blur-sm">
-                  Karaoke Synced Lyrics
-                </figcaption>
-              </figure>
-
-              {/* Screenshot 4: Search & Discovery */}
+              {/* Screenshot 3: Search & Discovery */}
               <figure className="group relative overflow-hidden rounded-2xl border border-border/80 bg-card">
                 <img
                   src="/screenshots/playlistview.jpg"
